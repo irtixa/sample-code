@@ -1,0 +1,102 @@
+.aboutScreen .aboutHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lastmodel{
+    display: flex;
+  margin-top: 25px;
+  justify-content: left;
+}
+.finalx {
+    display: flex;
+    margin-top: 25px;
+    justify-content: left;
+}
+.select{
+    width: 90px;
+    border-bottom: none;
+}
+.aboutScreen {
+  background-color: #edf5f9;
+  height: 1000px;
+  
+}
+.automation {
+  margin-left: 100px;
+  margin-top: 10px;
+  border: none;
+}
+.formenu {
+    background-color: white
+    rgb(255, 255, 255);
+    width: 100px;
+    border: 1px solid rgb(202, 193, 193);
+    padding: 2px;
+    margin-left: 20px;
+  }
+.btn {
+  width: 100px;
+
+  border: none;
+}
+.save {
+  margin-right: 100px;
+  margin-top: 10px;
+  background-color: white;
+}
+.Y{
+    margin-left: 780px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    
+}
+.BBB {
+    width: 70px;
+    margin-top: 10 px;
+  margin-left: 100px;
+  background-color: white !important;
+  border-left: 1px solid #8ddba2 !important;
+  border-top: none;
+  border-right:  1px solid #8ddba2 !important;
+  border-bottom:  1px solid #8ddba2 !important;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+.ZZZ{
+    border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+.bc {
+  border: none;
+  width: 120px;
+}
+.b {
+  width: 80px;
+  border: none;
+}
+.publish {
+  margin-left: 10px;
+}
+.b2 {
+  margin-left: 650px;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  width:350px;
+
+}
+
+.cardContainer{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.ant-menu-submenu-arrow{
+    display: none;
+}

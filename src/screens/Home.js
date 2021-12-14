@@ -3,6 +3,8 @@ import { Modal, Button } from "antd";
 import React, { useState } from "react";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { Tabs, Radio, Space, Form, Input } from "antd";
+//import  { Redirect } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 import {
   PlusCircleFilled,
   CalendarOutlined,
@@ -13,7 +15,11 @@ import { Card, Avatar } from "antd";
 const { TabPane } = Tabs;
 const { Meta } = Card;
 
+
+
+
 function Home() {
+  const history = useHistory();
   const [tabPosition, setTabPosition] = useState("left");
 
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -21,9 +27,10 @@ function Home() {
   const showModal = () => {
     setIsModalVisible(true);
   };
-  const show = () => {
+  const closeModel = () => {
     setissModalVisible(false);
     setIsModalVisible(false);
+    history.push(`/about`);
   };
 
   const handleOk = () => {
@@ -38,6 +45,8 @@ function Home() {
   const showModal2 = () => {
     setissModalVisible(true);
   };
+  
+    
 
   return (
     <>
@@ -68,15 +77,16 @@ function Home() {
         <div>
           <Tabs tabPosition={tabPosition} size="large">
             <TabPane tab="Lead Trigger" key="1">
-              <Card
+              <Card  onClick={closeModel}
                 style={{
                   width: 650,
                   marginTop: 0,
                   height: 80,
                   borderBottomColor: "#4de06f",
                   borderBottomWidth: 4,
+                  cursor:"pointer"
                 }}
-                onClick={show}
+               
               >
                 <Meta
                   avatar={
@@ -176,7 +186,5 @@ function Home() {
   );
 }
 
+
 export default Home;
-
-export const obj = { firstName: "ali", lastName: "haider" };
-
