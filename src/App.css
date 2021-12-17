@@ -4,6 +4,23 @@
 .App {
   text-align: center;
 }
+.PlusCircleFilled{
+color: #4de06f;
+font-size: large;
+}
+.qq{
+  display: flex;
+}
+.openmodel{
+  display: flex;
+  align-items: center;
+  height: 45vh;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.opportunitytrigger{
+  border-bottom-color: #8fa5ba;
+  border-bottom-width: 4px;}
 
 input{
   border: 0;
@@ -11,9 +28,38 @@ input{
   background: transparent;
   border-bottom: 1px solid black;
 }
+/* .btnopenmodel{
+width: 150px;
+height: 100px;
+font-size: 25px;
+margin-top: 350px;
+margin-left: 800px;
+} */
 
+.cardleadtrigger{
+width: 1000px;
+margin-top: 0px;
+height: 80px;
+border-bottom-color: #4de06f;
+border-bottom-width: 4px;
+cursor: pointer;
 
-select{
+}
+.tabflex{
+  display: flex;
+  flex-wrap: wrap;
+ 
+  flex-direction: row;
+  
+}
+
+.flexx
+{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.select{
   border: 0;
   outline: 0;
   background: transparent;
@@ -36,9 +82,7 @@ select{
     width: 600px;
     padding: 20px;
   };
-  .OM{
-    text-align: center;
-  }
+ 
 .ant-card-bordered {
   border: 1px solid #f0f0f0;
   border-bottom: 5px solid lime !important;
@@ -51,10 +95,9 @@ select{
  {
    background-color: #f5f5f5;
  }
- /* .ant-card-body{
-  border-bottom: 2px solid red;
- } */
+ 
  
  .ant-card-meta {
   margin: -10px 0;
 }
+

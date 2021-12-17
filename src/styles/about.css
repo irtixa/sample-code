@@ -1,4 +1,4 @@
-.aboutScreen .aboutHeader {
+.aboutHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,7 +8,7 @@
   margin-top: 25px;
   justify-content: left;
 }
-.finalx {
+.final {
     display: flex;
     margin-top: 25px;
     justify-content: left;
@@ -19,7 +19,7 @@
 }
 .aboutScreen {
   background-color: #edf5f9;
-  height: 1000px;
+  height: 1000px; 
   
 }
 .automation {
@@ -49,8 +49,13 @@
     margin-left: 780px;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
+    width: 100px;
     
 }
+.X{
+  width: 256px;
+}
+
 .BBB {
     width: 70px;
     margin-top: 10 px;
@@ -99,4 +104,36 @@
 }
 .ant-menu-submenu-arrow{
     display: none;
+}
+.card {
+  width: 550px; 
+  height: 80px;
+  border-bottom-color: #4de06f ;
+  border-bottom-width: 4px;
+  margin-left: 550px;
+  margin-top: 80px;
+
+ 
+} 
+.homefilled{
+color: black;
+}
+.homeIcon{
+  color: black;
+  border-left:1px solid black ;
+  margin:0 0 0 10px ;
+}
+.input{
+  width: 400px;
+}
+.btnb{
+  color: black;
+}
+.checkbox1
+{
+  margin-top: 40px;
+}
+.timepicker{
+margin-left: 50px;
+width: 400px;
 }

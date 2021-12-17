@@ -1,9 +1,11 @@
 import React from "react";
-
+import "../styles/Users.css";
 function User() {
   return (
-    <div>User</div>
-     
+    <div className="AA">
+    <div>Usdsdsdsser</div>
+    <div>kdsjdisjidjsidjsijdsidjsidjs</div>
+    </div>
   );
 }
 

@@ -1,4 +1,4 @@
-import "../styles/about.css";
+// import "../styles/about.css";
 import React, { useState } from "react";
 import { Button, Input, Card, Avatar } from "antd";
 import { Modal, Checkbox } from "antd";
@@ -29,45 +29,43 @@ const format = 'HH:mm';
 const { Search } = Input;
 const { Meta } = Card;
 const { SubMenu } = Menu;
+
 function About() {
   const [waitConditionModel, setWaitConditionModel] = useState(false)
   // const [isModalVisible, setIsModalVisible] = useState(false);
 
 
   return (
+    <div >
     <div className="aboutScreen">
       <div className="aboutHeader">
         <div className="automation">
           <Button ghost type="primary" size="medium" className="homeBtn">
-            <HomeFilled style={{ color: "black" }} />
+            <HomeFilled className="homefilled"  />
           </Button>
-          <Input
+          <Input className="input"
             placeholder="Enter your name"
             suffix={
               <EditFilled
                 className="homeIcon"
-                style={{
-                  color: "black",
-                  borderLeft: "1px solid black",
-                  margin: "0 0 0 10px",
-                }}
+               
               />
             }
-            style={{ width: 400 }}
+            
           />
         </div>
         <div className="save">
           <Button ghost type="primary" size="medium" className="btn">
-            <LeftOutlined style={{ color: "black" }} />
+            <LeftOutlined className="btnb"  />
           </Button>
           <Button className="b" ghost type="primary" size="medium">
-            <RightOutlined style={{ color: "black" }} />
+            <RightOutlined className="btnb"  />
           </Button>
           <Button className="b" ghost type="primary" size="medium">
-            <CloseOutlined style={{ color: "black" }} />
+            <CloseOutlined className="btnb"  />
           </Button>
           <Button className="b" ghost type="primary" size="medium">
-            <MinusOutlined style={{ color: "black" }} />
+            <MinusOutlined className="btnb"  />
           </Button>
           <Button ghost className="bc" type="primary" size="medium">
             Save
@@ -77,15 +75,8 @@ function About() {
           </Button>
         </div>
       </div>
-      <Card
-        style={{
-          width: 550,
-          height: 80,
-          borderBottomColor: "#4de06f",
-          borderBottomWidth: 4,
-          marginLeft: 550,
-          marginTop: 100,
-        }}
+      <Card className="card"
+      
       >
         <Meta
           title="Lead Update"
@@ -116,7 +107,7 @@ function About() {
         </div>
         <div className="lastmodel">
           <div className="inputmenu">
-            <Input placeholder="" style={{ width: 200 }}></Input>
+            <Input placeholder=""></Input>
           </div>
 
           <div className="formenu">
@@ -133,8 +124,8 @@ function About() {
             </select>
           </div>
         </div>
-        <div style={{ marginTop: 40 }}>
-          <Checkbox>Specify exact time and date </Checkbox>
+        <div className="checkbox1">
+          <Checkbox >Specify exact time and date </Checkbox>
         </div>
         <div className="final">
           <div>
@@ -145,14 +136,14 @@ function About() {
               />
             </Space>
           </div>
-          <div style={{marginLeft: 50,width:400}}>
+          <div className="timepicker">
           <TimePicker defaultValue={moment('12:08', format)} format={format} />
           </div>
         </div>
       </Modal>
       <div>
-        <Menu style={{ width: 100 }} defaultSelectedKeys={["1"]} mode="inline" className="Y" >
-          <SubMenu style={{ width: 256 }} key="sub1" icon={<PlusOutlined />} className="X">
+        <Menu  defaultSelectedKeys={["1"]} mode="inline" className="Y" >
+          <SubMenu  key="sub1" icon={<PlusOutlined />} className="X">
             <Menu.ItemGroup key="g1" title="Choose Condition or Action">
               <Menu.Item key="1" icon={<FieldTimeOutlined />} onClick={()=>setWaitConditionModel(true)}>
                 Wait
@@ -164,6 +155,7 @@ function About() {
           </SubMenu>
         </Menu>
       </div>
+    </div>
     </div>
   );
 }
