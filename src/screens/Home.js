@@ -71,7 +71,7 @@ function Home() {
                 <Card className="cardleadtrigger" onClick={closeModel}>
                   <Meta
                     avatar={<PlusCircleFilled className="PlusCircleFilled" />}
-                    title="New Lead"
+                    title="New Lead "
                     description="when   a    New   Lead   is   created   or    added"
                   />
                 </Card>
